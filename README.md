@@ -1,4 +1,5 @@
 # nss-daily-journal
 
-![Just Testing An Image Out](/images/readme-img1.png)
-Format: ![an image of nothing](url)
+
+# wireframe screenshot -- drawn on iPad w/ Apple Pencil. Created 8/15/20.
+![Wireframe Screengrab](/images/wireframe1.jpg)
