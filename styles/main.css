@@ -1,0 +1,189 @@
+/* Font import for: amitic (like rae dun), Oswald, Pacifico, Josefin Slab, Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Slab&family=Merriweather&family=Oswald&family=Pacifico&display=swap');
+
+
+/* General Styling */
+
+body {
+	width: 100%;
+}
+
+main {
+	background-color: #FCFCFC;
+	display: flex;
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Amatic SC', cursive;
+	font-weight: 100;
+	font-size: 3.5em;
+	margin: auto;
+	text-align: center;
+}
+
+
+h2, h3 {
+	font-family: 'Josefin Slab', serif;
+	color: #0d1821;
+	text-align: center;
+}
+
+p {
+	font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+/* header styling */
+#page-header {
+	align-items: center;
+	background-color: #8baaad;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-basis: 1400px;
+}
+
+.header-parts {
+	flex-basis: 100%;
+}
+
+.header-logo {
+	flex-basis: 8%;
+	flex-shrink: 1;
+	height: auto;
+}
+
+.header-logo img {
+	margin: auto 1em;
+	max-height: 80px;
+}
+
+.header-title {
+	flex-basis: 80%;
+}
+
+/* .header-nav {
+	flex-basis: 15%;
+} */
+
+/* overview styling */
+
+
+.overview {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	flex: 1 0 50%;
+}
+
+.inputCard {
+	height: 100px;
+	flex-wrap: wrap;
+	margin: 1em;
+	padding: 0.25em;
+	min-width: 150px;
+	max-width: 40%;
+	height: auto;
+	flex: 1 0 30%;
+	border: 2px solid #8baaad;
+}
+
+.sidebar {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	width: 60%;
+	height: 100%;
+	background-color: #c8d3d5;
+	flex: 1;
+	/* align-items: stretch; */
+	padding: 2%;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	min-width: 100%;
+	height: auto;
+	order: 10;
+	background-color: #8baaad;
+	color: #c8d3d5;
+	justify-content: center;
+}
+
+
+
+
+
+/* FORM STYLES */
+
+/* .formBox input {
+	border: 1px solid red;
+} */
+
+
+.formBox {
+	/* display: flex;
+	justify-content: space-between; */
+	border: 2px dotted #e16036;
+}
+
+.formRow {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 0.4em;
+	padding: 0.2em;
+	flex-basis: 3 0 100%;
+}
+
+.formInput {
+	/* padding: 0.2em; */
+	font-family: 'Josefin Slab', serif;
+	flex: 1 0 50%;
+	flex-wrap: wrap;
+	min-width: 70px;
+} 
+
+.formLabel {
+	font-family: 'Merriweather', serif;
+	flex: 1 0 30%;
+	flex-wrap: wrap;
+	padding: 0.2em;
+	min-width: 70px;
+} 
+
+.formSubmit {
+	display: flex;
+	justify-content: center;
+}
+
+.submitButton {
+	background-color: #e16036;
+	width: 70%;
+	height: 25%;
+	margin: 1.5em;
+	padding: 0.7em;
+	font-family: 'Merriweather', serif;
+	color: #0d1821;
+	border: none;
+	border-radius: 25px;
+}
+
+
+bottom of page styles
+
+.bottom-of-page-section {
+	display: flex;
+	flex-basis: 90%;
+	border: 3px solid red;
+}
+
+.footer-header {
+	flex-direction: row;
+	flex-grow: 1;
+	border: 1px solid blue;
+}
