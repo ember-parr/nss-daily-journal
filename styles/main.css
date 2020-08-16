@@ -31,13 +31,14 @@ h2, h3 {
 
 p {
 	font-family: 'Oswald', sans-serif;
+	line-height: 1.75;
 }
 
 
 
 
 /* header styling */
-#page-header {
+#pageHeader {
 	align-items: center;
 	background-color: #8baaad;
 	display: flex;
@@ -112,6 +113,9 @@ p {
 	background-color: #8baaad;
 	color: #c8d3d5;
 	justify-content: center;
+	font-family: 'Merriweather', serif;
+	font-weight: 200;
+	font-size: 1em;
 }
 
 
@@ -171,19 +175,7 @@ p {
 	color: #0d1821;
 	border: none;
 	border-radius: 25px;
+	font-size: 1em;
+	font-weight: 600;
 }
 
-
-bottom of page styles
-
-.bottom-of-page-section {
-	display: flex;
-	flex-basis: 90%;
-	border: 3px solid red;
-}
-
-.footer-header {
-	flex-direction: row;
-	flex-grow: 1;
-	border: 1px solid blue;
-}
