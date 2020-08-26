@@ -4,16 +4,6 @@
 
 /* General Styling */
 
-body {
-	width: 100%;
-}
-
-main {
-	background-color: #FCFCFC;
-	display: flex;
-	width: 100%;
-}
-
 h1 {
 	font-family: 'Amatic SC', cursive;
 	font-weight: 100;
@@ -37,79 +27,87 @@ p {
 
 
 
-/* header styling */
-#pageHeader {
+
+
+
+
+main {
+	width: 100%;
+}
+
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 70% auto;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"header header"
+		"input sidebar"
+		"entries sidebar"
+		"footer footer";
+	justify-items: stretch;
+
 	align-items: center;
-	background-color: #8baaad;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	flex-basis: 1400px;
-}
-
-.header-parts {
-	flex-basis: 100%;
-}
-
-.header-logo {
-	flex-basis: 8%;
-	flex-shrink: 1;
-	height: auto;
-}
-
-.header-logo img {
-	margin: auto 1em;
-	max-height: 80px;
-}
-
-.header-title {
-	flex-basis: 80%;
-}
-
-/* .header-nav {
-	flex-basis: 15%;
-} */
-
-/* overview styling */
-
-
-.overview {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	flex: 1 0 50%;
-}
-
-.inputCard {
-	height: 100px;
-	flex-wrap: wrap;
-	margin: 1em;
-	padding: 0.25em;
-	min-width: 150px;
-	max-width: 40%;
-	height: auto;
-	flex: 1 0 30%;
-	border: 2px solid #8baaad;
+	align-content: stretch;
 }
 
 .sidebar {
-	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-	width: 60%;
-	height: 100%;
-	background-color: #c8d3d5;
-	flex: 1;
-	/* align-items: stretch; */
-	padding: 2%;
+	grid-area: sidebar;
+	margin: 0 1em;
+	padding: 1em;
+	align-self: start;
 }
 
+.display-entries {
+	grid-area: entries;
+	
+}
+
+.entry-card {
+	border: 1px solid #e16036;
+	margin: 1em;
+	padding: 1em;
+}
+
+.entry-card h3 {
+	font-size: 1.75em;
+	margin-bottom: 0;
+	text-align: start;
+	margin-left: 1.25em;
+	text-decoration: underline;
+}
+
+.caption {
+	font-weight: 100;
+	opacity: 50%;
+	color: grey;
+	margin-left: 0.5em;
+}
+
+/* header styling */
+#page-header {
+	grid-area: header;
+	align-items: center;
+	background-color: #8baaad;
+	justify-content: space-between;
+	margin-bottom: 1.5em;
+}
+
+
+
+.inputCard {
+	align-self: center;
+	grid-area: input;
+	margin: 1em;
+	padding: 1em;
+	border: 2px solid #8baaad;
+}
+
+
 .footer {
+	grid-area: footer;
 	display: flex;
-	flex-direction: row;
-	min-width: 100%;
 	height: auto;
-	order: 10;
 	background-color: #8baaad;
 	color: #c8d3d5;
 	justify-content: center;
@@ -118,20 +116,9 @@ p {
 	font-size: 1em;
 }
 
-
-
-
-
 /* FORM STYLES */
 
-/* .formBox input {
-	border: 1px solid red;
-} */
-
-
 .formBox {
-	/* display: flex;
-	justify-content: space-between; */
 	border: 2px dotted #e16036;
 }
 
