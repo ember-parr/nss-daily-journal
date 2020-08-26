@@ -12,36 +12,36 @@ const journal = [
     {
         id: 1,
         date: "08/10/2020",
-        concept: "HTML & CSS",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Giddy"
+        concept: "Terminal Basics",
+        entry: "We talked about the terminal & command line... having this much power to destroy my computer is terifying",
+        mood: "Skurrd"
     },
     {
         id: 2,
         date: "08/11/2020",
-        concept: "Complex Flexbox",
-        entry: "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
-        mood: "sad"
+        concept: "HTML Structure & Layout",
+        entry: "Basic stuff. Semantic Tags, divs, classes etc. Also went over flexbox functionality",
+        mood: "Giddy"
     },
     {
         id: 3,
         date: "08/12/2020",
-        concept: "Complex Flexbox",
-        entry: "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
-        mood: "Sad"
+        concept: "Fish in my Aquarium",
+        entry: "used flex box to display fishies in Martin's Aquarium. very nice, very nice!",
+        mood: "Accomplished"
     },
     {
         id: 4,
-        date: "07/26/2025",
-        concept: "Complex Flexbox",
-        entry: "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
-        mood: "Sad"
+        date: "08/13/2020",
+        concept: "GitHub",
+        entry: "lord. have. mercy. GitHub is a beautifully horrifying place on the internet. so much excite.",
+        mood: "Overwhelmed"
     },
     {
         id: 5,
-        date: "07/26/2025",
-        concept: "Complex Flexbox",
-        entry: "I tried to have an element in my Flexbox layout also be another Flexbox layout. It hurt my brain. I hate Steve.",
+        date: "08/14/2020",
+        concept: "Group Project #1",
+        entry: "Began working on group project numero uno! Our group hit a great stride working through problems together & kicked some GitHub Ass. So many AH-HA moments today.",
         mood: "Sad"
     }
 ]
