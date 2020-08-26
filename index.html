@@ -6,69 +6,60 @@
         <link rel="stylesheet" href="./styles/main.css">
     </head>
 
-    <body>
-        <main>
+<body>
+    <main>
         <section class="wrapper">
+            
             <header id="page-header">
                 <div class="header-logo header-parts">
                     <img src="/images/Logo.png" alt="Ember Logo">
-                </div>
+                </div>                
                 <div class="header-title header-parts">
                     <h1>Ember's Daily Journal</h1>
                 </div>
-                <!-- <div class="header-nav header-parts">
-                    <nav> hamburger navbar here </nav>
-                </div> -->
+                
             </header>
 
-            
 
-
-            <!-- start of meaty section -->
-            
-                
-                <!-- daily journal entry card -->
                 <div class="inputCard">
                     <h2>Journal Entry</h2>
+                    
                     <div class = "formBox">
                         <form>
-                            <div class="formRow">
-                                <label for="entryDate" class="formLabel">Entry Date:</label>
-                                <input type="date" id="entryDate" name="entryDate" class="formInput"><br>
-                            </div>
+                                <div class="formRow">
+                                    <label for="entryDate" class="formLabel">Entry Date:</label>
+                                    <input type="date" id="entryDate" name="entryDate" class="formInput"><br>
+                                </div>
 
-                            <div class="formRow">
-                                <label for="entryConcepts" class="formLabel">Concepts Covered:</label>
-                                <input type="text" id="entryConcepts" name="entryConcepts" class="formInput"><br>
-                            </div>
+                                <div class="formRow">
+                                    <label for="entryConcepts" class="formLabel">Concepts Covered:</label>
+                                    <input type="text" id="entryConcepts" name="entryConcepts" class="formInput"><br>
+                                </div>
 
-                            <div class="formRow">
-                                <label for="entryText" class="formLabel">Today's Entry</label>
-                                <textarea rows="4" class="formInput">write today's entry HERE</textarea> 
-                            </div>
+                                <div class="formRow">
+                                    <label for="entryText" class="formLabel">Today's Entry</label>
+                                    <textarea rows="4" class="formInput">write today's entry HERE</textarea> 
+                                </div>
 
-                            <div class="formRow">
-                                <label class="formLabel">Select list</label>
-                                    <select class="formInput">
-                                    <option value = "happy">Happy</option>
-                                    <option value = "sad">Sad</option>
-                                    <option value = "overwhelmed">Overwhelmed</option>
-                                    <option value = "giddy">Giddy</option>
-                                    </select><br>
-                            </div>
+                                <div class="formRow">
+                                    <label class="formLabel">Select list</label>
+                                        <select class="formInput">
+                                        <option value = "happy">Happy</option>
+                                        <option value = "sad">Sad</option>
+                                        <option value = "overwhelmed">Overwhelmed</option>
+                                        <option value = "giddy">Giddy</option>
+                                        </select><br>
+                                </div>
                         </form>
                     </div>
                     <div class="formSubmit">
                         <button type="submit" form="form1" value="Submit" class="submitButton">Submit</button>
                     </div>
-                </div>
-          
-       
-            <!-- end of input cards  --> 
+
+
+                </div>            
             
-            
-            <!-- sidebar aside  -->
-            
+            <!-- sidebar aside  -->            
                 <div class="sidebar">
                     <h2>Sidebar, not sure what i want to put here just yet</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Memini me adesse P. Nunc agendum est subtilius. De vacuitate doloris eadem sententia erit. </p>
@@ -82,7 +73,6 @@
                     <p>Oratio me istius philosophi non offendit; Sed potestne rerum maior esse dissensio? Istam voluptatem perpetuam quis potest praestare sapienti? Quae quidem sapientes sequuntur duce natura tamquam videntes; Tubulo putas dicere? Cur iustitia laudatur? </p>
                     <p>Duo Reges: constructio interrete. Invidiosum nomen est, infame, suspectum. Equidem e Cn. Omnes enim iucundum motum, quo sensus hilaretur. </p>
                 </div>
-                
             <!-- end of sidebar aside  -->
 
 
@@ -90,35 +80,18 @@
 
             <div class="display-entries">
                 <div class="previous-entries">
-                    <!-- entries should show up right HERE -->
+                    <!-- display of previous entries -->
                 </div>
             </div>
             
         
-        </section>
+        </section>  
 
+    </main>
 
-
-            
-
-
-
-
-        </main>
-
-            <footer class="footer">
-                <p class="footer-text">Footer Info</p>
-            </footer>
-
-
-
-
-
-
-
-
-
-
+        <footer class="footer">
+            <p class="footer-text">Footer Info</p>
+        </footer>
 
         <script type="module" src="./scripts/main.js"></script>
     </body>
