@@ -21,7 +21,9 @@ h2, h3 {
 
 p {
 	font-family: 'Oswald', sans-serif;
+	line-height: 1.75;
 }
+
 
 
 
@@ -44,6 +46,7 @@ main {
 		"entries sidebar"
 		"footer footer";
 	justify-items: stretch;
+
 	align-items: center;
 	align-content: stretch;
 }
@@ -108,6 +111,9 @@ main {
 	background-color: #8baaad;
 	color: #c8d3d5;
 	justify-content: center;
+	font-family: 'Merriweather', serif;
+	font-weight: 200;
+	font-size: 1em;
 }
 
 /* FORM STYLES */
@@ -156,6 +162,7 @@ main {
 	color: #0d1821;
 	border: none;
 	border-radius: 25px;
+	font-size: 1em;
+	font-weight: 600;
 }
-
 
