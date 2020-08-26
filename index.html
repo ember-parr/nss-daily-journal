@@ -7,25 +7,25 @@
     </head>
 
     <body>
-        
-        <header id="page-header">
-            <div class="header-logo header-parts">
-                <img src="/images/Logo.png" alt="Ember Logo">
-            </div>
-            <div class="header-title header-parts">
-                <h1>Ember's Daily Journal</h1>
-            </div>
-            <!-- <div class="header-nav header-parts">
-                <nav> hamburger navbar here </nav>
-            </div> -->
-        </header>
-
         <main>
+        <section class="wrapper">
+            <header id="page-header">
+                <div class="header-logo header-parts">
+                    <img src="/images/Logo.png" alt="Ember Logo">
+                </div>
+                <div class="header-title header-parts">
+                    <h1>Ember's Daily Journal</h1>
+                </div>
+                <!-- <div class="header-nav header-parts">
+                    <nav> hamburger navbar here </nav>
+                </div> -->
+            </header>
+
+            
 
 
             <!-- start of meaty section -->
-            <section class="overview">
-                
+            
                 
                 <!-- daily journal entry card -->
                 <div class="inputCard">
@@ -57,118 +57,18 @@
                                     </select><br>
                             </div>
                         </form>
-
                     </div>
-                       <div class="formSubmit">
-                            <button type="submit" form="form1" value="Submit" class="submitButton">Submit</button>
-                        </div>
-
-
+                    <div class="formSubmit">
+                        <button type="submit" form="form1" value="Submit" class="submitButton">Submit</button>
+                    </div>
                 </div>
-
-                <!-- brain dump card -->
-                <!-- <div class="inputCard">
-                    <h2>Brain Dump</h2>
-
-                    <div class = "formBox">
-                        <form>
-                            <div class="formRow">
-                                <label for="entryDate" class="formLabel">Entry Date:</label>
-                                <input type="date" id="entryDate" name="entryDate" class="formInput"><br>
-                            </div>
-
-                            <div class="formRow">
-                                <label for="entryText" class="formLabel">Jot It Down</label>
-                                <textarea rows="5.7" class="formInput">write today's brain dump HERE</textarea> 
-                            </div>
-
-                            <div class="formRow">
-                                <label for="entryText" class="formLabel">Why It Matters</label>
-                                <textarea rows="3.7" class="formInput">...</textarea> 
-                            </div>
-                        </form>
-
-                    </div>
-                       <div class="formSubmit">
-                            <button type="submit" form="form1" value="Submit" class="submitButton">Submit</button>
-                        </div>
-
-                </div> -->
-
-                <!-- screenshot card -->
-                <!-- <div class="inputCard">
-                    <h2>Screenshots</h2>
-                    <div class = "formBox">
-                        <form>
-                            <div class="formRow">
-                                <label for="entryDate" class="formLabel">Entry Date:</label>
-                                <input type="date" id="entryDate" name="entryDate" class="formInput"><br>
-                            </div>
-
-                            <div class="formRow">
-                                <label for="entryConcepts" class="formLabel">What's In The S.S? Name It!</label>
-                                <input type="text" id="entryConcepts" name="entryConcepts" class="formInput"><br>
-                            </div>
-
-                            <div class="formRow">
-                                <label for="entryText" class="formLabel">well poop</label>
-                                <textarea rows="4" class="formInput">I have no idea how to make a photo upload</textarea> 
-                            </div>
-
-                            
-                        </form>
-
-                    </div>
-                       <div class="formSubmit">
-                            <button type="submit" form="form1" value="Submit" class="submitButton">Submit</button>
-                        </div>
-
-
-                </div> -->
-
-                <!-- ah ha moment card -->
-                <!-- <div class="inputCard">
-                    <h2>Ah-HA! Moments</h2>
-                    <div class = "formBox">
-                        <form>
-                            <div class="formRow">
-                                <label for="entryDate" class="formLabel">Entry Date:</label>
-                                <input type="date" id="entryDate" name="entryDate" class="formInput"><br>
-                            </div>
-
-                            <div class="formRow">
-                                <label for="entryConcepts" class="formLabel">Subject:  </label>
-                                <input type="text" id="entryConcepts" name="entryConcepts" class="formInput"><br>
-                            </div>
-
-                            <div class="formRow">
-                                <label for="entryText" class="formLabel">Document The Magic </label>
-                                <textarea rows="4" class="formInput">TA-DA!</textarea> 
-                            </div>
-
-                            <div class="formRow">
-                                <label class="formLabel">Select list</label>
-                                    <select class="formInput">
-                                    <option value = "happy">Happy</option>
-                                    <option value = "sad">Sad</option>
-                                    <option value = "overwhelmed">Overwhelmed</option>
-                                    <option value = "giddy">Giddy</option>
-                                    </select><br>
-                            </div>
-                        </form>
-
-                    </div>
-                       <div class="formSubmit">
-                            <button type="submit" form="form1" value="Submit" class="submitButton">Submit</button>
-                        </div>
-
-
-                </div> -->
-            </section>
+          
+       
             <!-- end of input cards  --> 
             
             
             <!-- sidebar aside  -->
+            
                 <div class="sidebar">
                     <h2>Sidebar, not sure what i want to put here just yet</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Memini me adesse P. Nunc agendum est subtilius. De vacuitate doloris eadem sententia erit. </p>
@@ -182,35 +82,24 @@
                     <p>Oratio me istius philosophi non offendit; Sed potestne rerum maior esse dissensio? Istam voluptatem perpetuam quis potest praestare sapienti? Quae quidem sapientes sequuntur duce natura tamquam videntes; Tubulo putas dicere? Cur iustitia laudatur? </p>
                     <p>Duo Reges: constructio interrete. Invidiosum nomen est, infame, suspectum. Equidem e Cn. Omnes enim iucundum motum, quo sensus hilaretur. </p>
                 </div>
+                
             <!-- end of sidebar aside  -->
 
 
-            <!-- end of meaty input boxes and aside section -->
+            
 
-
-                <section class="previous-entries">
-
+            <div class="display-entries">
+                <div class="previous-entries">
                     <!-- entries should show up right HERE -->
+                </div>
+            </div>
+            
+        
+        </section>
 
 
-                </section>
 
-
-
-
-            <!-- start of bottom unknown section -->
-            <!-- <section class="bottom-of-page-section">
-                <div class="footer-header"><h1>At iam decimum annum in spelunca iacet.</h1></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid turpius quam sapientis vitam ex insipientium sermone pendere? Ut proverbia non nulla veriora sint quam vestra dogmata. Restat locus huic disputationi vel maxime necessarius de amicitia, quam, si voluptas summum sit bonum, affirmatis nullam omnino fore. Quae tamen a te agetur non melior, quam illae sunt, quas interdum optines. Duo Reges: constructio interrete. Si quae forte-possumus. Voluptatem cum summum bonum diceret, primum in eo ipso parum vidit, deinde hoc quoque alienum; Qualis ista philosophia est, quae non interitum afferat pravitatis, sed sit contenta mediocritate vitiorum? </p>
-                <blockquote cite="http://loripsum.net">
-                    Quare, quotienscumque dicetur male quis de se mereri sibique esse inimicus atque hostis, vitam denique fugere, intellegatur aliquam subesse eius modi causam, ut ex eo ipso intellegi possit sibi quemque esse carum.
-                </blockquote>
-                <h2>Quis non odit sordidos, vanos, leves, futtiles?</h2>
-                <p>Perfecto enim et concluso neque virtutibus neque amicitiis usquam locum esse, si ad voluptatem omnia referantur, nihil praeterea est magnopere dicendum. Quid ergo aliud intellegetur nisi uti ne quae pars naturae neglegatur? Sed quoniam et advesperascit et mihi ad villam revertendum est, nunc quidem hactenus; Alii rursum isdem a principiis omne officium referent aut ad voluptatem aut ad non dolendum aut ad prima illa secundum naturam optinenda. Est igitur officium eius generis, quod nec in bonis ponatur nec in contrariis. Quasi vero aut concedatur in omnibus stultis aeque magna esse vitia, et eadem inbecillitate et inconstantia L. Simul atque natum animal est, gaudet voluptate et eam appetit ut bonum, aspernatur dolorem ut malum. Inquit, an parum disserui non verbis Stoicos a Peripateticis, sed universa re et tota sententia dissidere? Duae sunt enim res quoque, ne tu verba solum putes. Summum a vobis bonum voluptas dicitur. </p>
-                <p>Quia nec honesto quic quam honestius nec turpi turpius. Hoc non est positum in nostra actione. Pungunt quasi aculeis interrogatiunculis angustis, quibus etiam qui assentiuntur nihil commutantur animo et idem abeunt, qui venerant. Ita fit cum gravior, tum etiam splendidior oratio. Et nunc quidem quod eam tuetur, ut de vite potissimum loquar, est id extrinsecus; </p>
-                <p>Non est ista, inquam, Piso, magna dissensio. Non est enim vitium in oratione solum, sed etiam in moribus. Atqui, inquit, si Stoicis concedis ut virtus sola, si adsit vitam efficiat beatam, concedis etiam Peripateticis. O magnam vim ingenii causamque iustam, cur nova existeret disciplina! Perge porro. Ex ea difficultate illae fallaciloquae, ut ait Accius, malitiae natae sunt. Tantum dico, magis fuisse vestrum agere Epicuri diem natalem, quam illius testamento cavere ut ageretur. Hic nihil fuit, quod quaereremus. </p>
-            </section> -->
-            <!-- end of bottom unknown section -->
+            
 
 
 

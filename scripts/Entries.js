@@ -3,7 +3,7 @@ export const entry = (entryObj) => {
     <div class="entry-card">
         <h3>${entryObj.concept}</h3>
         <p>${entryObj.entry}</p>
-        <caption>${entryObj.date} / mood:${entryObj.mood}</caption>
+        <caption>mood: ${entryObj.mood}  •  ${entryObj.date}   • </caption>
     </div>
     `
 }
