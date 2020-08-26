@@ -93,6 +93,22 @@ main {
 	margin-bottom: 1.5em;
 }
 
+.header-logo {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-logo img {
+	float: left;
+}
+
+.header-logo h1 {
+	float: right;
+	
+}
+
+
+
 
 
 .inputCard {
