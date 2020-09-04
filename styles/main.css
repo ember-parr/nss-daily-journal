@@ -1,184 +1,167 @@
 /* Font import for: amitic (like rae dun), Oswald, Pacifico, Josefin Slab, Merriweather */
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Slab&family=Merriweather&family=Oswald&family=Pacifico&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Slab&family=Merriweather&family=Oswald&family=Pacifico&display=swap");
 
 /* General Styling */
 
 h1 {
-	font-family: 'Amatic SC', cursive;
-	font-weight: 100;
-	font-size: 3.5em;
-	margin: auto;
-	text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-weight: 100;
+  font-size: 3.5em;
+  margin: auto;
+  text-align: center;
 }
 
-
-h2, h3 {
-	font-family: 'Josefin Slab', serif;
-	color: #0d1821;
-	text-align: center;
+h2,
+h3 {
+  font-family: "Josefin Slab", serif;
+  color: #0d1821;
+  text-align: center;
 }
 
 p {
-	font-family: 'Oswald', sans-serif;
-	line-height: 1.75;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.75;
 }
-
-
-
-
-
-
-
 
 main {
-	width: 100%;
+  width: 100%;
 }
 
-
 .wrapper {
-	display: grid;
-	grid-template-columns: 70% auto;
-	grid-template-rows: auto;
-	grid-template-areas:
-		"header header"
-		"input sidebar"
-		"entries sidebar"
-		"footer footer";
-	justify-items: stretch;
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "input sidebar"
+    "entries sidebar"
+    "footer footer";
+  justify-items: stretch;
 
-	align-items: center;
-	align-content: stretch;
+  align-items: center;
+  align-content: stretch;
 }
 
 .sidebar {
-	grid-area: sidebar;
-	margin: 0 1em;
-	padding: 1em;
-	align-self: start;
+  grid-area: sidebar;
+  margin: 0 1em;
+  padding: 1em;
+  align-self: start;
 }
 
 .display-entries {
-	grid-area: entries;
-	
+  grid-area: entries;
 }
 
 .entry-card {
-	border: 1px solid #e16036;
-	margin: 1em;
-	padding: 1em;
+  border: 1px solid #e16036;
+  margin: 1em;
+  padding: 1em;
 }
 
 .entry-card h3 {
-	font-size: 1.75em;
-	margin-bottom: 0;
-	text-align: start;
-	margin-left: 1.25em;
-	text-decoration: underline;
+  font-size: 1.75em;
+  margin-bottom: 0;
+  text-align: start;
+  margin-left: 1.25em;
+  text-decoration: underline;
 }
 
 .caption {
-	font-weight: 100;
-	opacity: 50%;
-	color: grey;
-	margin-left: 0.5em;
+  font-weight: 100;
+  opacity: 50%;
+  color: grey;
+  margin-left: 0.5em;
 }
 
 /* header styling */
 #page-header {
-	grid-area: header;
-	align-items: center;
-	background-color: #8baaad;
-	justify-content: space-between;
-	margin-bottom: 1.5em;
+  grid-area: header;
+  align-items: center;
+  background-color: #8baaad;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
 }
 
 .header-logo {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-logo img {
-	float: left;
+  float: left;
 }
 
 .header-logo h1 {
-	float: right;
-	
+  float: right;
 }
-
-
-
-
 
 .inputCard {
-	align-self: center;
-	grid-area: input;
-	margin: 1em;
-	padding: 1em;
-	border: 2px solid #8baaad;
+  align-self: center;
+  grid-area: input;
+  margin: 1em;
+  padding: 1em;
+  border: 2px solid #8baaad;
 }
 
-
 .footer {
-	grid-area: footer;
-	display: flex;
-	height: auto;
-	background-color: #8baaad;
-	color: #c8d3d5;
-	justify-content: center;
-	font-family: 'Merriweather', serif;
-	font-weight: 200;
-	font-size: 1em;
+  grid-area: footer;
+  display: flex;
+  height: auto;
+  background-color: #8baaad;
+  color: #c8d3d5;
+  justify-content: center;
+  font-family: "Merriweather", serif;
+  font-weight: 200;
+  font-size: 1em;
 }
 
 /* FORM STYLES */
 
 .formBox {
-	border: 2px dotted #e16036;
+  border: 2px dotted #e16036;
 }
 
 .formRow {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	margin: 0.4em;
-	padding: 0.2em;
-	flex-basis: 3 0 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0.4em;
+  padding: 0.2em;
+  flex-basis: 3 0 100%;
 }
 
 .formInput {
-	/* padding: 0.2em; */
-	font-family: 'Josefin Slab', serif;
-	flex: 1 0 50%;
-	flex-wrap: wrap;
-	min-width: 70px;
-} 
+  /* padding: 0.2em; */
+  font-family: "Josefin Slab", serif;
+  flex: 1 0 50%;
+  flex-wrap: wrap;
+  min-width: 70px;
+}
 
 .formLabel {
-	font-family: 'Merriweather', serif;
-	flex: 1 0 30%;
-	flex-wrap: wrap;
-	padding: 0.2em;
-	min-width: 70px;
-} 
+  font-family: "Merriweather", serif;
+  flex: 1 0 30%;
+  flex-wrap: wrap;
+  padding: 0.2em;
+  min-width: 70px;
+}
 
 .formSubmit {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .submitButton {
-	background-color: #e16036;
-	width: 70%;
-	height: 25%;
-	margin: 1.5em;
-	padding: 0.7em;
-	font-family: 'Merriweather', serif;
-	color: #0d1821;
-	border: none;
-	border-radius: 25px;
-	font-size: 1em;
-	font-weight: 600;
+  background-color: #e16036;
+  width: 70%;
+  height: 25%;
+  margin: 1.5em;
+  padding: 0.7em;
+  font-family: "Merriweather", serif;
+  color: #0d1821;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: 600;
 }
-
