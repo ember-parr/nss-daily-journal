@@ -1,5 +1,5 @@
-import { entryOnDom } from "./JournalList.js";
+import { JournalList } from "./JournalList.js";
 import { JournalForm } from "./JournalForm.js";
 
-entryOnDom();
+JournalList();
 JournalForm();
