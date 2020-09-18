@@ -1,5 +1,13 @@
+const eventHub = document.querySelector(".wrapper");
+
+const dispatchStateChangeEvent = () => {
+  const entryStateChangedEvent = new CustomEvent("entryStateChanged");
+  eventHub.dispatchEvent(entryStateChangedEvent)
+}
+
+
+
 let entries = [];
-let entriesSortedByDate = [];
 
 export const getJournalEntries = () => {
   return fetch("http://localhost:8088/entries")
