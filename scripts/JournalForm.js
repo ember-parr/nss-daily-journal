@@ -1,11 +1,36 @@
-import { getJournalEntries, useJournalEntries } from "./JournalDataProvider.js";
+import { getJournalEntries, saveEntry, useJournalEntries } from "./JournalDataProvider.js";
 
 const contentTarget = document.querySelector(".inputCard");
 const eventHub = document.querySelector(".wrapper");
 
 eventHub.addEventListener("click", (clickEvent) => {
   if (clickEvent.target.id === "submitButton") {
-    //set input values to variable here
+    const entryDate = document.querySelector("#entryDate");
+    const entryConcept = document.querySelector("#entryConcept");
+    const entryText = document.querySelector("#entryText");
+    const entryMood = document.querySelector("#entryMood");
+
+    const clearEntryForm = () => {
+      entryDate.value="";
+      entryConcept.value="";
+      entryText.value="";
+      entryMood.value="0";
+    };
+
+    if (entryConcept.value === "") {
+      window.alert("please enter concept(s) covered")
+    } else if (entryText.value = "") {
+      window.alert("please provide entry text")
+    } else {
+      const newEntry = {
+        date: entryDate.value,
+        concept: entryConcept.value,
+        entry: entryText.value,
+        mood: entryMood.value
+      };
+      clearEntryForm();
+      saveEntry(newEntry)
+    }
   }
 });
 
@@ -26,17 +51,17 @@ const render = (entryArray) => {
                                 </div>
                                 <div class="formRow">
                                     <label for="entryFrom--concept" class="formLabel">Concept Covered:</label>
-                                    <textarea rows="1" class="formInput" placeholder="Concept(s) Covered..."></textarea>
+                                    <textarea rows="1" class="formInput" id="entryConcept" placeholder="Concept(s) Covered..."></textarea>
                                 </div>
 
                                 <div class="formRow">
                                     <label for="entryText" class="formLabel">Today's Entry</label>
-                                    <textarea rows="4" class="formInput" placeholder="write today's entry HERE"></textarea> 
+                                    <textarea rows="4" class="formInput" id="entryText" placeholder="write today's entry HERE"></textarea> 
                                 </div>
 
                                 <div class="formRow">
                                     <label class="formLabel">Select list</label>
-                                        <select class="formInput">
+                                        <select class="formInput" id="entryMood">
                                         <option value = "happy">Happy</option>
                                         <option value = "sad">Sad</option>
                                         <option value = "overwhelmed">Overwhelmed</option>

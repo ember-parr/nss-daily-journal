@@ -34,6 +34,20 @@
       "concept": "Group Project #1",
       "entry": "Began working on group project numero uno! Our group hit a great stride working through problems together & kicked some GitHub Ass. So many AH-HA moments today.",
       "mood": "Sad"
+    },
+    {
+      "date": "2020-09-18",
+      "concept": "deleting data",
+      "entry": "",
+      "mood": "giddy",
+      "id": 6
+    },
+    {
+      "date": "2020-09-18",
+      "concept": "delete api data",
+      "entry": "",
+      "mood": "overwhelmed",
+      "id": 7
     }
   ]
 }

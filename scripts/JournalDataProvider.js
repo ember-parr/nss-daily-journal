@@ -28,7 +28,7 @@ export const saveEntry = (entryObj) => {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(noteObj),
+    body: JSON.stringify(entryObj),
   })
   .then(() => {
     return getJournalEntries()
