@@ -26,19 +26,12 @@ const render = (entryArray) => {
                                 </div>
                                 <div class="formRow">
                                     <label for="entryFrom--concept" class="formLabel">Concept Covered:</label>
-                                <select class="formInput" id="entryForm--concept">
-                                    <option value="0">Concept Covered</option>
-                                    ${sortedArray
-                                      .map((entryObject) => {
-                                        return `<option value="${entryObject}">${entryObject}</option>`;
-                                      })
-                                      .join("")}
-                                </select>
+                                    <textarea rows="1" class="formInput" placeholder="Concept(s) Covered..."></textarea>
                                 </div>
 
                                 <div class="formRow">
                                     <label for="entryText" class="formLabel">Today's Entry</label>
-                                    <textarea rows="4" class="formInput">write today's entry HERE</textarea> 
+                                    <textarea rows="4" class="formInput" placeholder="write today's entry HERE"></textarea> 
                                 </div>
 
                                 <div class="formRow">
