@@ -10,16 +10,16 @@ eventHub.addEventListener("click", (clickEvent) => {
     const entryText = document.querySelector("#entryText");
     const entryMood = document.querySelector("#entryMood");
 
-    const clearEntryForm = () => {
-      entryDate.value="";
-      entryConcept.value="";
-      entryText.value="";
-      entryMood.value="0";
-    };
+    // const clearEntryForm = () => {
+    //   entryDate.value="";
+    //   entryConcept.value="";
+    //   entryText.value="";
+    //   entryMood.value="0";
+    // };
 
     if (entryConcept.value === "") {
       window.alert("please enter concept(s) covered")
-    } else if (entryText.value = "") {
+    } else if (entryText.value === "") {
       window.alert("please provide entry text")
     } else {
       const newEntry = {
@@ -28,7 +28,7 @@ eventHub.addEventListener("click", (clickEvent) => {
         entry: entryText.value,
         mood: entryMood.value
       };
-      clearEntryForm();
+      // clearEntryForm();
       saveEntry(newEntry)
     }
   }
@@ -44,23 +44,23 @@ const render = (entryArray) => {
     
     <h2>Journal Entry</h2>
                     <div class = "formBox">
-                        <form>
+                       
                                 <div class="formRow">
-                                    <label for="entryDate" class="formLabel">Entry Date:</label>
+                                    <div class="formLabel">Entry Date:</div>
                                     <input type="date" id="entryDate" name="entryDate" class="formInput"><br>
                                 </div>
                                 <div class="formRow">
-                                    <label for="entryFrom--concept" class="formLabel">Concept Covered:</label>
+                                    <div class="formLabel">Concept Covered:</div>
                                     <textarea rows="1" class="formInput" id="entryConcept" placeholder="Concept(s) Covered..."></textarea>
                                 </div>
 
                                 <div class="formRow">
-                                    <label for="entryText" class="formLabel">Today's Entry</label>
-                                    <textarea rows="4" class="formInput" id="entryText" placeholder="write today's entry HERE"></textarea> 
+                                    <div class="formLabel">Today's Entry</div>
+                                    <textarea class="formInput" id="entryText" placeholder="write today's entry HERE"></textarea> 
                                 </div>
 
                                 <div class="formRow">
-                                    <label class="formLabel">Select list</label>
+                                    <div class="formLabel">How's Your Mood? </div>
                                         <select class="formInput" id="entryMood">
                                         <option value = "happy">Happy</option>
                                         <option value = "sad">Sad</option>
@@ -68,7 +68,7 @@ const render = (entryArray) => {
                                         <option value = "giddy">Giddy</option>
                                         </select><br>
                                 </div>
-                        </form>
+                        
                     </div>
                     <div class="formSubmit">
                         <button type="submit" form="form1" value="Submit" id="submitButton">Submit</button>
