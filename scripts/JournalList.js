@@ -1,8 +1,8 @@
 import { getJournalEntries, useJournalEntries } from "./JournalDataProvider.js";
-import { entry } from "./entries.js";
+import { entryHTML } from "./entries.js";
 
 const contentSelector = document.querySelector(".previous-entries");
-let entryArray = [];
+const eventHub = document.querySelector(".wrapper");
 
 export const JournalList = () => {
   getJournalEntries().then(() => {
@@ -11,9 +11,14 @@ export const JournalList = () => {
   });
 };
 
+eventHub.addEventListener("entryStateChanged", () => {
+  const newEntries = useJournalEntries();
+  addEntriesToDom(newEntries)
+})
+
 const addEntriesToDom = (anArrayOfEntries) => {
   let HTMLRender = anArrayOfEntries.map((singleEntry) => {
-    return entry(singleEntry);
+    return entryHTML(singleEntry);
   });
   contentSelector.innerHTML = HTMLRender.join("");
 };

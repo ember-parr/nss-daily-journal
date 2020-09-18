@@ -1,5 +1,13 @@
+const eventHub = document.querySelector(".wrapper");
+
+const dispatchStateChangeEvent = () => {
+  const entryStateChangedEvent = new CustomEvent("entryStateChanged");
+  eventHub.dispatchEvent(entryStateChangedEvent)
+}
+
+
+
 let entries = [];
-let entriesSortedByDate = [];
 
 export const getJournalEntries = () => {
   return fetch("http://localhost:8088/entries")
@@ -12,3 +20,18 @@ export const getJournalEntries = () => {
 export const useJournalEntries = () => {
   return entries.slice();
 };
+
+
+export const saveEntry = (entryObj) => {
+  return fetch("http://localhost:8088/entries", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(entryObj),
+  })
+  .then(() => {
+    return getJournalEntries()
+  })
+  .then(dispatchStateChangeEvent);
+}
