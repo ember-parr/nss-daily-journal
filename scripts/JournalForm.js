@@ -10,12 +10,12 @@ eventHub.addEventListener("click", (clickEvent) => {
     const entryText = document.querySelector("#entryText");
     const entryMood = document.querySelector("#entryMood");
 
-    // const clearEntryForm = () => {
-    //   entryDate.value="";
-    //   entryConcept.value="";
-    //   entryText.value="";
-    //   entryMood.value="0";
-    // };
+    const clearEntryForm = () => {
+      entryDate.value="";
+      entryConcept.value="";
+      entryText.value="";
+      entryMood.value="0";
+    };
 
     if (entryConcept.value === "") {
       window.alert("please enter concept(s) covered")
@@ -28,7 +28,7 @@ eventHub.addEventListener("click", (clickEvent) => {
         entry: entryText.value,
         mood: entryMood.value
       };
-      // clearEntryForm();
+      clearEntryForm();
       saveEntry(newEntry)
     }
   }

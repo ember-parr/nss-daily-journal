@@ -76,6 +76,20 @@
       "entry": "lord I hope so",
       "mood": "sad",
       "id": 11
+    },
+    {
+      "date": "2026-04-13",
+      "concept": "this field should clear... right?",
+      "entry": "or the whole form ACTUALLY ",
+      "mood": "overwhelmed",
+      "id": 12
+    },
+    {
+      "date": "3024-12-13",
+      "concept": "okay NOW the form should clear out",
+      "entry": "the code was commented out",
+      "mood": "giddy",
+      "id": 13
     }
   ]
 }
