@@ -1,4 +1,4 @@
-export const entry = (entryObj) => {
+export const entryHTML = (entryObj) => {
     return `
     <div class="entry-card">
         <h3>${entryObj.concept}</h3>
