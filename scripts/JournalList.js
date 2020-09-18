@@ -8,7 +8,6 @@ export const JournalList = () => {
   getJournalEntries().then(() => {
     entryArray = useJournalEntries();
     addEntriesToDom(entryArray);
-    render(entryArray);
   });
 };
 
