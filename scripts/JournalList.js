@@ -6,7 +6,7 @@ const eventHub = document.querySelector(".wrapper");
 
 export const JournalList = () => {
   getJournalEntries().then(() => {
-    entryArray = useJournalEntries();
+    let entryArray = useJournalEntries();
     addEntriesToDom(entryArray);
   });
 };

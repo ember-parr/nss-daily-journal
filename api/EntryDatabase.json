@@ -34,62 +34,6 @@
       "concept": "Group Project #1",
       "entry": "Began working on group project numero uno! Our group hit a great stride working through problems together & kicked some GitHub Ass. So many AH-HA moments today.",
       "moodId": 1
-    },
-    {
-      "date": "2020-09-18",
-      "concept": "deleting data",
-      "entry": "",
-      "moodId": 7,
-      "id": 6
-    },
-    {
-      "date": "2020-09-18",
-      "concept": "delete api data",
-      "entry": "",
-      "moodId": 3,
-      "id": 7
-    },
-    {
-      "date": "1478-02-18",
-      "concept": "maybe magic",
-      "entry": "",
-      "mood": 6,
-      "id": 8
-    },
-    {
-      "date": "0303-01-02",
-      "concept": "removed row ",
-      "entry": "",
-      "moodId": 2,
-      "id": 9
-    },
-    {
-      "date": "6060-06-06",
-      "concept": "segssertught",
-      "entry": "0",
-      "moodId": 1,
-      "id": 10
-    },
-    {
-      "date": "6969-06-09",
-      "concept": "was it the === thingy",
-      "entry": "lord I hope so",
-      "moodId": 4,
-      "id": 11
-    },
-    {
-      "date": "2026-04-13",
-      "concept": "this field should clear... right?",
-      "entry": "or the whole form ACTUALLY ",
-      "moodId": 3,
-      "id": 12
-    },
-    {
-      "date": "3024-12-13",
-      "concept": "okay NOW the form should clear out",
-      "entry": "the code was commented out",
-      "moodId": 2,
-      "id": 13
     }
   ],
   "moods": [
