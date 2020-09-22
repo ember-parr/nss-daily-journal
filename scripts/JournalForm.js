@@ -1,4 +1,5 @@
 import { getJournalEntries, saveEntry, useJournalEntries } from "./JournalDataProvider.js";
+import { getMoods, useMoods } from "./MoodProvider.js"
 
 const contentTarget = document.querySelector(".inputCard");
 const eventHub = document.querySelector(".wrapper");
@@ -26,7 +27,7 @@ eventHub.addEventListener("click", (clickEvent) => {
         date: entryDate.value,
         concept: entryConcept.value,
         entry: entryText.value,
-        mood: entryMood.value
+        moodId: parseInt(entryMood.value)
       };
       clearEntryForm();
       saveEntry(newEntry)
@@ -34,12 +35,18 @@ eventHub.addEventListener("click", (clickEvent) => {
   }
 });
 
-const render = (entryArray) => {
-  const entryConcepts = entryArray.map((entryObj) => {
-    let entryConceptName = entryObj.concept;
-    return entryConceptName;
-  });
-  const sortedArray = entryConcepts.sort();
+let moods;
+
+export const journalMoodSelect = () => {
+  getMoods()
+  .then(()=> {
+    moods = useMoods();
+  })
+}
+
+const render = (moods, entryArray) => {
+  console.log("moods", moods)
+  console.log(entryArray)
   contentTarget.innerHTML = `
     
     <h2>Journal Entry</h2>
@@ -61,17 +68,16 @@ const render = (entryArray) => {
 
                                 <div class="formRow">
                                     <div class="formLabel">How's Your Mood? </div>
-                                        <select class="formInput" id="entryMood">
-                                        <option value = "happy">Happy</option>
-                                        <option value = "sad">Sad</option>
-                                        <option value = "overwhelmed">Overwhelmed</option>
-                                        <option value = "giddy">Giddy</option>
-                                        </select><br>
+                                      <select class="formInput" id="entryMood">
+                                      <option value="0"> Choose One:</option>
+                                      ${moods.map((moodStr)=> {
+                                        return `<option value="${moodStr.id}">${moodStr.mood}</option>`
+                                      })}</select>
                                 </div>
                         
                     </div>
                     <div class="formSubmit">
-                        <button type="submit" form="form1" value="Submit" id="submitButton">Submit</button>
+                        <button type="submit" value="Submit" id="submitButton">Submit</button>
                     </div>
 
     `;
@@ -79,6 +85,6 @@ const render = (entryArray) => {
 
 export const JournalForm = () => {
   getJournalEntries().then(() => {
-    render(useJournalEntries());
+    render(moods, useJournalEntries());
   });
 };
