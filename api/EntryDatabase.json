@@ -5,91 +5,79 @@
       "date": "08/10/2020",
       "concept": "Terminal Basics",
       "entry": "We talked about the terminal & command line... having this much power to destroy my computer is terifying",
-      "mood": "Skurrd"
+      "moodId": 2
     },
     {
       "id": 2,
       "date": "08/11/2020",
       "concept": "HTML Structure & Layout",
       "entry": "Basic stuff. Semantic Tags, divs, classes etc. Also went over flexbox functionality",
-      "mood": "Giddy"
+      "moodId": 1
     },
     {
       "id": 3,
       "date": "08/12/2020",
       "concept": "Fish in my Aquarium",
       "entry": "used flex box to display fishies in Martin's Aquarium. very nice, very nice!",
-      "mood": "Accomplished"
+      "moodId": 3
     },
     {
       "id": 4,
       "date": "08/13/2020",
       "concept": "GitHub",
       "entry": "lord. have. mercy. GitHub is a beautifully horrifying place on the internet. so much excite.",
-      "mood": "Overwhelmed"
+      "moodId": 2
     },
     {
       "id": 5,
       "date": "08/14/2020",
       "concept": "Group Project #1",
       "entry": "Began working on group project numero uno! Our group hit a great stride working through problems together & kicked some GitHub Ass. So many AH-HA moments today.",
-      "mood": "Sad"
+      "moodId": 1
     },
     {
-      "date": "2020-09-18",
-      "concept": "deleting data",
-      "entry": "",
-      "mood": "giddy",
+      "date": "2020-09-22",
+      "concept": "_expand json server",
+      "entry": "this is hard!",
+      "moodId": 5,
       "id": 6
     },
     {
-      "date": "2020-09-18",
-      "concept": "delete api data",
-      "entry": "",
-      "mood": "overwhelmed",
+      "date": "2020-09-22",
+      "concept": "more json methods",
+      "entry": "need to bookmark the documentation on this!",
+      "moodId": 7,
       "id": 7
+    }
+  ],
+  "moods": [
+    {
+      "mood": "Accomplished",
+      "id": 1
     },
     {
-      "date": "1478-02-18",
-      "concept": "maybe magic",
-      "entry": "",
-      "mood": "sad",
-      "id": 8
+      "mood": "Giddy",
+      "id": 2
     },
     {
-      "date": "0303-01-02",
-      "concept": "removed row ",
-      "entry": "",
-      "mood": "happy",
-      "id": 9
+      "mood": "Overwhelmed",
+      "id": 3
     },
     {
-      "date": "6060-06-06",
-      "concept": "segssertught",
-      "entry": "0",
-      "mood": "sad",
-      "id": 10
+      "mood": "Skurrd",
+      "id": 4
     },
     {
-      "date": "6969-06-09",
-      "concept": "was it the === thingy",
-      "entry": "lord I hope so",
-      "mood": "sad",
-      "id": 11
+      "mood": "Doom & Gloom",
+      "id": 5
     },
     {
-      "date": "2026-04-13",
-      "concept": "this field should clear... right?",
-      "entry": "or the whole form ACTUALLY ",
-      "mood": "overwhelmed",
-      "id": 12
+      "mood": "Nerdy",
+      "id": 6
     },
     {
-      "date": "3024-12-13",
-      "concept": "okay NOW the form should clear out",
-      "entry": "the code was commented out",
-      "mood": "giddy",
-      "id": 13
+      "mood": "Behind",
+      "id": 7
     }
   ]
 }
