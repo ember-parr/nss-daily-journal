@@ -34,12 +34,16 @@ const deleteEntry = (entryId) => {
 eventHub.addEventListener("click", event => {
   if (event.target.id.startsWith("deleteEntry--")) {
     const [prefix, id] = event.target.id.split("--")
-
-    deleteEntry(id).then(
-      () => {
-        const updatedEntries = useJournalEntries()
-        addEntriesToDom(updatedEntries)
-      }
-    )
+    let popUpMsg = confirm("This entry will be perminately deleted");
+    if (popUpMsg === true) {
+      deleteEntry(id).then(
+        () => {
+          const updatedEntries = useJournalEntries()
+          addEntriesToDom(updatedEntries)
+        }
+      )
+    } else {
+      console.log("delete action cancleled.")
+    }
   }
 })
