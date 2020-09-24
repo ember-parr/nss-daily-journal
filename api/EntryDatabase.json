@@ -37,13 +37,6 @@
     },
     {
       "date": "2020-09-22",
-      "concept": "_expand json server",
-      "entry": "this is hard!",
-      "moodId": 5,
-      "id": 6
-    },
-    {
-      "date": "2020-09-22",
       "concept": "more json methods",
       "entry": "need to bookmark the documentation on this!",
       "moodId": 7,

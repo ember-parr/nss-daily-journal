@@ -22,3 +22,24 @@ const addEntriesToDom = (anArrayOfEntries) => {
   });
   contentSelector.innerHTML = HTMLRender.join("");
 };
+
+
+const deleteEntry = (entryId) => {
+  return fetch(`http://localhost:8088/entries/${entryId}`, {
+    method:"delete"
+  })
+  .then(getJournalEntries)
+}
+
+eventHub.addEventListener("click", event => {
+  if (event.target.id.startsWith("deleteEntry--")) {
+    const [prefix, id] = event.target.id.split("--")
+
+    deleteEntry(id).then(
+      () => {
+        const updatedEntries = useJournalEntries()
+        addEntriesToDom(updatedEntries)
+      }
+    )
+  }
+})
