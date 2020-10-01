@@ -47,3 +47,11 @@ eventHub.addEventListener("click", event => {
     }
   }
 })
+
+eventHub.addEventListener("moodChosen", event => {
+  const journalEntries = useJournalEntries()
+
+  const filteredEntries = journalEntries.filter(entry => entry.moodId === event.detail.moodOptionChosen)
+  console.log("mood chosen: ", filteredEntries)
+  addEntriesToDom(filteredEntries)
+})
